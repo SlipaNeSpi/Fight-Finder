@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Fight Finder</title>
+	<link rel="stylesheet" href="css.main.css">
+</head>
+<body>
+	<header>
+		<div id="logo" onclick="slowScroll('#top')">
+			<span>Fight Finder</span>
+		</div>
+		<div id="about">
+			<a href="#" title="Описание" onclick="slowScroll('#main')">Описание</a>
+			<a href="#" onclick="slowScroll('#overview')" title="Преимущества">Что мы предлагаем</a>
+			<a href="#" onclick="slowScroll('#contacts')" title="Контакты">Обратная связь</a>
+			<a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a>
+			
+		</div>
+	</header>
+
+	<div id="top">
+		<h1>Приветствуем вас на Fight Finder</h1>
+		<h3>Сервисе для поиска спарринг-партнера</h3>
+		<button class="button" onclick="openPopup()">Создать аккаунт</button>
+		<!-- Всплывающее окно -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <p>Не-не, сервис для взрослых дядек. Иди потренируйся сам, сынок</p>
+    </div>
+  </div>
+
+  <script>
+    function openPopup() {
+      document.getElementById("popup").style.display = "block";
+    }
+
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
+	</div>
+
+	<div id="main">
+		<div class="intro">
+			<h1>Вам не с кем тренироваться?
+Тогда вы по адресу!</h1>
+			<span>У нас большой выбор всего, что может вам пригодиться</span>
+		</div>
+		<div class="text">
+			<span>Мы предлагаем удобный и простой способ найти подходящего партнера для тренировок и поднять свой уровень в выбранном виде спорта. Наш сайт предоставляет возможность найти партнера по различным критериям, таким как уровень подготовки, спортивные навыки, возраст, пол, местоположение и другие параметры. Вы можете записываться на регулярные турниры или просто приглашать партнеров на спарринг, обмениваться сообщениями и оставлять отзывы о партнерах. Наша цель - помочь вам найти идеального партнера для тренировок, повысить качество своих тренировок и достигнуть новых высот в спорте. Присоединяйтесь к нашему сообществу спортсменов и найдите своего идеального спарринг-партнера уже сегодня!</span>
+		</div>
+	</div>
+
+	<div id="overview">
+		<h2>Что мы предлагаем</h2>
+		<h4></h4>
+
+		<div class="img">
+			<img src="https://armiyapro.ru/wp-content/uploads/posts/919398a0b2cafc60fe6b24990b42cebe.jpg" alt="">
+			<span>Ищите спарринг-партнеров, используя фильтры по различным критериям (Пол, возраст, навыки и т.д)</span>
+		</div>
+		<div class="img">
+			<img src="https://catherineasquithgallery.com/uploads/posts/2021-03/1614677468_44-p-fon-yedinoborstva-50.jpg" alt="">
+			<span>Записывайтесь на регулярные турниры, которые будут разделяться по виду боевых искусств, физическим параметрам и т.д.</span>
+		</div>
+		<div class="img">
+			<img src="https://sportishka.com/uploads/posts/2022-11/1667460136_50-sportishka-com-p-ruki-boksera-vkontakte-61.jpg" alt="">
+			<span>Отслеживайте себя в системе рейтинга бойцов, как в общей, так и по разным категориям</span>
+		</div>
+		<div class="img">
+			<img src="https://komiinform.ru/content/news/images/160964/file_1414907631_969357269.jpg" alt="">
+			<span>Также сервисом предусмотрена для вас система поощрений, при достижении определенных результатов</span>
+		</div>
+	</div>
+
+	<div id="contacts">
+		<center><h5>Обратная связь</h5></center>
+		<form id="form_input">
+			<label for="name">Имя <span>*</span></label><br>
+			<input type="text" placeholder="Введите имя" name="name" id="name"><br>
+			<label for="email">Ваша почта <span>*</span></label><br>
+			<input type="email" placeholder="Введите email" name="email" id="email"><br>
+			<label for="message">Сообщение <span>*</span></label><br>
+			<textarea placeholder="Введите сообщение" name="message" id="message"></textarea><br>
+			<div id="mess_send" class="btn">Отправить</div>
+		</form>
+	</div>
+
+	<div id="faq">
+		<div>
+			<span class="title">Создание профиля</span><br>
+			<span class="heading">Какие данные и информация необходимы для создания успешного профиля пользователя?</span>
+			<p>Для создания успешного профиля необходимо заполнить все поля, указав информацию о своих спортивных навыках, опыте в спорте, уровне подготовки, географическом местоположении и других параметрах. Пользователь также может добавить фотографии и видео, чтобы представить себя в лучшем свете.</p>
+		</div>
+		<div>
+			<span class="title">Поиск и связь с партнером</span><br>
+			<span class="heading">Как найти подходящего спарринг-партнера на сайте?</span>
+			<p>Для поиска подходящего спарринг-партнера на сайте можно использовать фильтры по различным критериям, таким как спортивные навыки, уровень опыта, возраст, пол, местоположение и другие параметры. Пользователь может просмотреть профили других пользователей и связаться с теми, кто подходит под его критерии.</p>
+			<span class="heading">Как связаться с потенциальным партнером через сайт?</span>
+			<p>Чтобы связаться с потенциальным партнером через сайт, пользователь может отправить ему сообщение через систему сообщений на сайте, указав дату и время, когда хочет провести спарринг-сессию. Пользователь может также использовать другие способы связи, указанные в профиле другого пользователя.</p>
+		</div>
+		<div>
+			<span class="title">Безопасность</span><br>
+			<span class="heading">Какие меры безопасности рекомендуется соблюдать при использовании сайта для поиска спарринг-партнера?</span>
+			<p>Для безопасного использования сайта для поиска спарринг-партнера рекомендуется соблюдать меры предосторожности, такие как проверка профиля другого пользователя перед встречей, выбор безопасного места для проведения спарринга и обмен контактной информацией только после того, как пользователь убедится вдостоверности информации о партнере. Также важно соблюдать правила поведения на сайте, избегать конфликтных ситуаций и сообщать администрации сайта о любых проблемах или нарушениях, чтобы поддерживать безопасность и комфортное сотрудничество между пользователями.</p>
+		</div>
+	</div>
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+	<script>
+		function slowScroll(id) {
+			$('html, body').animate({
+				scrollTop: $(id).offset().top
+			}, 500);
+		}
+
+		$(document).on("scroll", function () {
+			if($(window).scrollTop() === 0)
+				$("header").removeClass("fixed");
+			else
+				$("header").attr("class", "fixed");
+		});
+	</script>
+</body>
+</html>
